@@ -42,7 +42,7 @@ export default function NFCScanner() {
           let data = "";
           try {
             const textDecoder = new TextDecoder();
-            // @ts-expect-error web-nfc
+
             data = textDecoder.decode(record.data);
           } catch {
             data = "<binary/unknown>";
